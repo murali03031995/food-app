@@ -4,3 +4,5 @@ FROM httpd:2.4
 COPY . /usr/local/apache2/htdocs/
 # Expose port 80 (the default HTTP port)
 EXPOSE 80
+# Set the default command to run when the container starts
+CMD ["httpd-foreground"]
