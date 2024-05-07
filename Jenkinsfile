@@ -3,6 +3,7 @@ pipeline {
     
 environment {
     dockerhub=credentials('dockerhub')
+    JENKINS_HOME=/home/ubuntu
     }     
     stages {        
         stage('checkout') {
